@@ -5,10 +5,8 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.UtilityPackage.ExtentReport;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-
 public class Listeners extends BaseClass implements ITestListener {
 	ExtentTest test;
 	ExtentReports extent = ExtentReport.getExtendReport();

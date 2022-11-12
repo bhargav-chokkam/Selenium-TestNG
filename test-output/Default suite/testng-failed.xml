@@ -6,8 +6,8 @@
       <class name="com.testCases.LoginTestCases">
         <methods>
           <include name="quiteBrowser"/>
+          <include name="loginHappyPath"/>
           <include name="launchWebSite"/>
-          <include name="invalidPassword"/>
         </methods>
       </class> <!-- com.testCases.LoginTestCases -->
     </classes>

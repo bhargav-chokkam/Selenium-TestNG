@@ -1,4 +1,4 @@
-package com.UtilityPackage;
+package com.BasePackage;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -13,5 +13,4 @@ public class ExtentReport {
 		extent.attachReporter(spark);
 		return extent;
 	}
-
 }
