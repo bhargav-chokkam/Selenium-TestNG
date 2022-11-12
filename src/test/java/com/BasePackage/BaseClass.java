@@ -14,6 +14,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -40,6 +42,18 @@ public class BaseClass {
 		if (browser.contains("Chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+		} else if (browser.contains("Firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		} else if (browser.contains("Edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		} else {
+			System.out.println("Passed browser not found. Supported Browsers are: ");
+			System.out.println("Chrome");
+			System.out.println("Firefox");
+			System.out.println("Edge");
+			System.exit(0);
 		}
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
