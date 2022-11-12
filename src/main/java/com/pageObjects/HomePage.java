@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.UtilityPackage.CommonMethods;
+import Util.CommonMethods;
+
 
 public class HomePage {
 	WebDriver driver;
