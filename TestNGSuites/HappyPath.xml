@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+	<!--Parallel enables the tests/methods to run in parallel -->
+	<groups>
+		<run>
+			<include name="invalidPassword"/>
+			<include name="UrlValidation"/>
+		</run>
+	</groups>
+	<listeners>
+		<listener class-name="com.BasePackage.Listeners" />
+	</listeners>
+	<parameter name="url"
+		value="https://rahulshettyacademy.com/client" />
+	<test thread-count="5" name="LoginTestCases">
+		<!-- If we have 10 methods, will execute 5 first then remaining next -->
+		<classes>
+			<class name="com.testCases.LoginTestCases" />
+		</classes>
+	</test>
+	<test thread-count="5" name="UrlValidationTestCases">
+		<classes>
+			<class name="com.testCases.UrlValidationTestCases" />
+		</classes>
+	</test>
+</suite> 

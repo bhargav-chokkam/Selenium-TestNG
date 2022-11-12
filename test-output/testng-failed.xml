@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="url" value="https://rahulshettyacademy.com/client"/>
+  <listeners>
+    <listener class-name="com.BasePackage.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="UrlValidationTestCases(failed)">
+    <classes>
+      <class name="com.testCases.UrlValidationTestCases">
+        <methods>
+          <include name="quiteBrowser"/>
+          <include name="invalidUrlValidation"/>
+          <include name="launchWebSite"/>
+        </methods>
+      </class> <!-- com.testCases.UrlValidationTestCases -->
+    </classes>
+  </test> <!-- UrlValidationTestCases(failed) -->
+</suite> <!-- Failed suite [Suite] -->
