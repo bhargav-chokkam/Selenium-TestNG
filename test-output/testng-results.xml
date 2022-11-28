@@ -1,11 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results retried="1" ignored="2" total="8" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-12T12:38:17 IST" name="Default suite" finished-at="2022-11-12T12:38:17 IST" duration-ms="24">
+  <suite started-at="2022-11-12T18:46:15 IST" name="Suite" finished-at="2022-11-12T18:46:41 IST" duration-ms="25470">
     <groups>
+      <group name="ErrorValidation">
+        <method signature="LoginTestCases.invalidPassword(java.util.HashMap)[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" name="invalidPassword" class="com.testCases.LoginTestCases"/>
+        <method signature="LoginTestCases.invalidUsername(java.util.HashMap)[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" name="invalidUsername" class="com.testCases.LoginTestCases"/>
+        <method signature="UrlValidationTestCases.invalidUrlValidation()[pri:0, instance:com.testCases.UrlValidationTestCases@5143c662]" name="invalidUrlValidation" class="com.testCases.UrlValidationTestCases"/>
+      </group> <!-- ErrorValidation -->
     </groups>
-    <test started-at="2022-11-12T12:38:17 IST" name="Default test" finished-at="2022-11-12T12:38:17 IST" duration-ms="24">
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    <test started-at="2022-11-12T18:46:15 IST" name="LoginTestCases" finished-at="2022-11-12T18:46:39 IST" duration-ms="23529">
+      <class name="com.testCases.LoginTestCases">
+        <test-method is-config="true" signature="launchWebSite(java.lang.String)[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" started-at="2022-11-12T18:46:16 IST" name="launchWebSite" finished-at="2022-11-12T18:46:22 IST" duration-ms="6182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebSite -->
+        <test-method signature="invalidPassword(java.util.HashMap)[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" started-at="2022-11-12T18:46:22 IST" name="invalidPassword" data-provider="getInvalidPassword" finished-at="2022-11-12T18:46:23 IST" duration-ms="724" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{userName=bhargavchokkam@25gmail.com, password=Dheya2m@5562}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPassword -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" started-at="2022-11-12T18:46:23 IST" name="quiteBrowser" finished-at="2022-11-12T18:46:23 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quiteBrowser -->
+        <test-method is-config="true" signature="launchWebSite(java.lang.String)[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" started-at="2022-11-12T18:46:23 IST" name="launchWebSite" finished-at="2022-11-12T18:46:27 IST" duration-ms="3887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebSite -->
+        <test-method signature="invalidPassword(java.util.HashMap)[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" started-at="2022-11-12T18:46:27 IST" name="invalidPassword" data-provider="getInvalidPassword" finished-at="2022-11-12T18:46:28 IST" duration-ms="597" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{userName=bhargavchokkam@25gmail.com, password=Dheya5562}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPassword -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" started-at="2022-11-12T18:46:28 IST" name="quiteBrowser" finished-at="2022-11-12T18:46:28 IST" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quiteBrowser -->
+        <test-method is-config="true" signature="launchWebSite(java.lang.String)[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" started-at="2022-11-12T18:46:28 IST" name="launchWebSite" finished-at="2022-11-12T18:46:33 IST" duration-ms="4991" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebSite -->
+        <test-method signature="invalidUsername(java.util.HashMap)[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" started-at="2022-11-12T18:46:33 IST" name="invalidUsername" data-provider="getInvalidUsername" finished-at="2022-11-12T18:46:34 IST" duration-ms="563" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Dheyam@5562, username=bhargakkam@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsername -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" started-at="2022-11-12T18:46:34 IST" name="quiteBrowser" finished-at="2022-11-12T18:46:34 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quiteBrowser -->
+        <test-method is-config="true" signature="launchWebSite(java.lang.String)[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" started-at="2022-11-12T18:46:34 IST" name="launchWebSite" finished-at="2022-11-12T18:46:38 IST" duration-ms="4469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebSite -->
+        <test-method signature="invalidUsername(java.util.HashMap)[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" started-at="2022-11-12T18:46:38 IST" name="invalidUsername" data-provider="getInvalidUsername" finished-at="2022-11-12T18:46:39 IST" duration-ms="509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Dheyam@5562, username=bhargachom@mail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsername -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:com.testCases.LoginTestCases@38aa816f]" started-at="2022-11-12T18:46:39 IST" name="quiteBrowser" finished-at="2022-11-12T18:46:39 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quiteBrowser -->
+      </class> <!-- com.testCases.LoginTestCases -->
+    </test> <!-- LoginTestCases -->
+    <test started-at="2022-11-12T18:46:15 IST" name="UrlValidationTestCases" finished-at="2022-11-12T18:46:41 IST" duration-ms="25470">
+      <class name="com.testCases.UrlValidationTestCases">
+        <test-method is-config="true" signature="launchWebSite(java.lang.String)[pri:0, instance:com.testCases.UrlValidationTestCases@5143c662]" started-at="2022-11-12T18:46:15 IST" name="launchWebSite" finished-at="2022-11-12T18:46:22 IST" duration-ms="6683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebSite -->
+        <test-method retried="true" signature="invalidUrlValidation()[pri:0, instance:com.testCases.UrlValidationTestCases@5143c662]" started-at="2022-11-12T18:46:22 IST" name="invalidUrlValidation" finished-at="2022-11-12T18:46:28 IST" duration-ms="5488" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.testCases.UrlValidationTestCases.invalidUrlValidation(UrlValidationTestCases.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUrlValidation -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:com.testCases.UrlValidationTestCases@5143c662]" started-at="2022-11-12T18:46:28 IST" name="quiteBrowser" finished-at="2022-11-12T18:46:29 IST" duration-ms="1360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quiteBrowser -->
+        <test-method is-config="true" signature="launchWebSite(java.lang.String)[pri:0, instance:com.testCases.UrlValidationTestCases@5143c662]" started-at="2022-11-12T18:46:29 IST" name="launchWebSite" finished-at="2022-11-12T18:46:34 IST" duration-ms="4808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebSite -->
+        <test-method signature="invalidUrlValidation()[pri:0, instance:com.testCases.UrlValidationTestCases@5143c662]" started-at="2022-11-12T18:46:34 IST" name="invalidUrlValidation" finished-at="2022-11-12T18:46:39 IST" duration-ms="5510" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.testCases.UrlValidationTestCases.invalidUrlValidation(UrlValidationTestCases.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUrlValidation -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:com.testCases.UrlValidationTestCases@5143c662]" started-at="2022-11-12T18:46:40 IST" name="quiteBrowser" finished-at="2022-11-12T18:46:41 IST" duration-ms="1203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quiteBrowser -->
+      </class> <!-- com.testCases.UrlValidationTestCases -->
+    </test> <!-- UrlValidationTestCases -->
+  </suite> <!-- Suite -->
 </testng-results>

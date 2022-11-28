@@ -18,7 +18,7 @@ public class testClass
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		driver.get("https://facebook.com");
-		
+	
 		
 		
 		driver.quit();

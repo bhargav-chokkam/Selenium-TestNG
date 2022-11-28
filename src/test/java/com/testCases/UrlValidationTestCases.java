@@ -15,7 +15,9 @@ public class UrlValidationTestCases extends BaseClass {
 		lpobj.enterPassword("Dheyam@5562");
 		HomePage hp = lpobj.clickLogin();
 		Thread.sleep(5000);
-		Assert.assertEquals(hp.returnCurrenturl(), "https://rahulshettyacademy.com/client/dashboard/dash");
+		String currentUrl = hp.returnCurrenturl();
+		boolean assertValue = compareString(currentUrl, "https://rahulshettyacademy.com/client/dashboard/dash");
+		Assert.assertTrue(assertValue);
 	}
 
 	@Test(groups = { "ErrorValidation" }, retryAnalyzer = Retry.class)
@@ -24,7 +26,10 @@ public class UrlValidationTestCases extends BaseClass {
 		lpobj.enterPassword("Dheyam@5562");
 		HomePage hp = lpobj.clickLogin();
 		Thread.sleep(5000);
-		Assert.assertNotEquals(hp.returnCurrenturl(), "https://rahulshettyacademy.com/client/dashboard/");
+		String currentUrl = hp.returnCurrenturl();
+		boolean assertValue = compareString(currentUrl, "https://rahulshettyacademy.com/client/dashboard/");
+		Assert.assertTrue(assertValue);
+
 	}
 
 }
