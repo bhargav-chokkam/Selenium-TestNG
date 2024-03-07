@@ -1,0 +1,22 @@
+Test Data File Path: X:\nextgen-selenium//src//test//java//com//CTM//TestData//MakePayment.json
+Key: CompanyName, Value: FEDERAL BUREAU OF PRISON
+Key: password, Value: Password
+Key: AgentBingo, Value: 98000
+Key: Email, Value: Gnaneswari.singamsetti@wu.com
+Key: CompanyLookUp, Value: Add New Company
+Key: CustomerLookUpName, Value: Koumya
+Key: AgentPhone, Value: 9494928121
+Key: wuposHome, Value: https://wupos5.qawesternunion.com/agent-app/home
+Key: Phone, Value: 9440236445
+Key: AgentAccount, Value: ALA018456
+Key: CustomerLookUpBy, Value: Phone
+Key: username, Value: USAGENT_APN_01
+Stored JSON Data into Map
+Requested for Data Object
+
+===============================================
+Suite
+Total tests run: 1, Passes: 0, Failures: 0, Skips: 1
+Configuration Failures: 4, Skips: 0
+===============================================
+

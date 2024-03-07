@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <!--    <listeners>-->
+    <!--        <listener class-name="Utility.RetryListener"/>-->
+    <!--    </listeners>-->
+    <parameter name="Project" value="CTM"/>
+    <parameter name="dataFile" value="MakePayment"/>
+    <test name="Generating MakePayment transactions from CTM">
+        <groups>
+            <run>
+                <include name="MakePayment"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.CTM.TestCases"/>
+        </packages>
+    </test>
+</suite>
